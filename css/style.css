@@ -3,3 +3,29 @@
   padding: 0;
   box-sizing: border-box;
 }
+img {
+  width: 320px;
+  margin: 20px 0;
+}
+h1,
+p {
+  margin: 20px 0;
+}
+#mobile-app {
+  width: 430px;
+  height: 932px;
+  background-color: #f4b393;
+  text-align: center;
+}
+#loading-bar {
+  width: 300px;
+  height: 30px;
+  margin-top: 30px;
+  border: 2px solid #97b9b9;
+}
+#loading-bar::-webkit-progress-bar {
+  background-color: #9dd1f1;
+}
+#loading-bar::-webkit-progress-value {
+  background-color: #ceec97;
+}

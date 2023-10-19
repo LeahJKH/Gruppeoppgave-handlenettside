@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     count++;
     loadingBar.value = count;
     if (count === 100) {
-      location.href = "./pagetwo.html";
+      location.href = "./homepage.html";
     }
   }
 });

@@ -4,8 +4,6 @@
   box-sizing: border-box;
 }
 body {
-  text-align: center;
-
   display: flex;
   justify-content: center;
   align-items: center;

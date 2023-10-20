@@ -6,9 +6,15 @@
 body {
   display: flex;
   flex-direction: column;
+  margin-inline: auto;
   background-color: #9dd1f1;
-  max-width: 430px;
   color: #130f1a;
+  max-width: 430px;
+}
+header,
+main,
+footer {
+  max-width: 430px;
 }
 /* ---------------
 !!!!!! Text !!!!!
@@ -26,20 +32,25 @@ h4 {
 header {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   background-color: #f48393;
+  padding-right: 10px;
 }
 #Logo {
   width: 100px;
   height: 100px;
 }
 /* !!!! Hamburger menu !!!!! */
-
+#menu-ham {
+  width: 35px;
+  height: 35px;
+}
 /* --------------------
 !!!!!! Main !!!!!!!!
 ------------------ */
 main {
-  margin: 20px 0px;
+  margin: 20px 20px;
 }
 .food {
   background-color: #ceec97;
@@ -47,6 +58,7 @@ main {
   border-radius: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding: 5px;
 }
 .User {
   display: flex;
@@ -57,7 +69,7 @@ main {
   border-radius: 60px;
 }
 .food-img {
-  max-width: 430px;
+  max-width: 360px;
   padding: 10px;
   /* image-resolution: ; */
 }
@@ -65,6 +77,13 @@ main {
 /* ---------------
 !!!!!! Fotter !!!!!
 ------------------ */
+footer {
+  display: flex;
+  background-color: #f48393;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .menu-btn {
   width: 55px;
   height: 55px;
@@ -73,13 +92,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-footer {
-  display: flex;
-  background-color: #f48393;
-  justify-content: space-around;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 .menu-btn > img {
   width: 35px;

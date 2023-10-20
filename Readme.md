@@ -8,6 +8,7 @@
 ----------Alexander--------
 
 -Making the navbar in html
+-Making the header in html
 ----------Andre---------------
 -Laget hedder ferdig
 -mangler bare Animasjon for hamburger Korte er ferdig

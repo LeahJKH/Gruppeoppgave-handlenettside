@@ -1,47 +1,45 @@
 const userCard = document.querySelector("User-cards");
 // Arrays
-const names = ["Anna", "Roger", "Mina", "Hans"];
-const titles = [
-  "mmmmm, tasty",
-  "You gotta try this",
-  "See what i made",
-  "Easy and fast",
+const users = [
+  {
+    name: "Anna",
+    title: "mmmmm, tasty",
+    time: "10 min",
+    image: { src: "hamburger.avif", title: "Hamburger title" },
+  },
+  {
+    name: "Roger",
+    title: "You gotta try this",
+    time: "20 min",
+    image: { src: "pasta.avif", title: "Pasta title" },
+  },
+  {
+    name: "Mina",
+    title: "See what I made",
+    time: "45 min",
+    image: { src: "pizza.avif", title: "Pizza title" },
+  },
+  {
+    name: "Hans",
+    title: "Easy and fast",
+    time: "60 min",
+    image: { src: "Salad.avif", title: "Salad title" },
+  },
 ];
-const time = ["10 min", "20 min", "45min,", "60 min"];
-// image create and array
-const images = [
-  { src: "hamburger.avif", title: "Hamburger title" },
-  { src: "pasta.avif", title: "Pasta title" },
-  { src: "pizza.avif", title: "Pizza title" },
-  { src: "Salad.avif", title: "Salad title" },
-];
-// Function to create an image element
-function createImageElement(src, title) {
-  const img = document.createElement("img");
-  img.src = src;
-  img.alt = title;
-  img.title = title;
-  return img;
-}
 //  Function to create a user card
-function createUserCard() {
+function createUserCard(user) {
   const randomCardIndex = Math.floor(Math.random() * names.length);
-  const userCard = document.querySelector("#user-food");
+  const user = users[randomCardIndex];
   userCard.innerHTML = `
-    <img src="" alt="User" class="user-img" />
-    <h2>${names[randomCardIndex]}</h2>
+    <img src=${image[randomCardIndex].src} alt="User" class="user-img" />
+    <h2>${image[randomCardIndex].title}</h2>
     <div class="container">
-      ${
-        createImageElement(
-          images[randomCardIndex].src,
-          images[randomCardIndex].title
-        ).outerHTML
       }
       <h3>${titles[randomCardIndex]}</h3>
       <p>${time[randomCardIndex]}</p>
     </div>
   `;
-  userCardContainer.appendChild(userCard);
+  userCard.appendChild(userCard);
 }
 
 // Create multiple user cards

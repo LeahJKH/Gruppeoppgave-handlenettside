@@ -17,3 +17,4 @@
 -Forlenget existerende array i Js
 -create image array added Js
 -forsøkt å lage "cards" dynamisk
+-Fikset rettskriving og Js script i Htlml

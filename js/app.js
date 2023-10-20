@@ -9,5 +9,5 @@ document.addEventListener("DOMContentLoaded", function () {
     if (count === 100) {
       location.href = "./homepage.html";
     }
-  }
+  } //makes it fill the loadingbar then checks if its full before sending too next
 });

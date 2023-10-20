@@ -1,7 +1,6 @@
 const userCard = document.querySelector("User-cards");
 
 const names = ["Anna", "Roger", "Mina"];
-
 const titles = ["mmmmm, tasty", "You gotta try this", "See what i made"];
 
 function createCards() {
@@ -15,4 +14,4 @@ function createCards() {
 <p></p>
 </div>
 `;
-}
+} // creates a card each time called upon

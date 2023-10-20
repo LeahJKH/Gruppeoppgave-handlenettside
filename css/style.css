@@ -65,3 +65,23 @@ main {
 /* ---------------
 !!!!!! Fotter !!!!!
 ------------------ */
+.menu-btn {
+  width: 55px;
+  height: 55px;
+  background-color: #9dd1f1;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  display: flex;
+  background-color: #f48393;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.menu-btn > img {
+  width: 35px;
+  height: 35px;
+}

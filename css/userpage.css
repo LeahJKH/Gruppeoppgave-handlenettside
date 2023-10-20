@@ -23,7 +23,7 @@ body {
 }
 header {
   background-color: #f4b393;
-  height: 110px;
+  height: 80px;
   width: 320px;
   position: absolute;
   top: 0;
@@ -35,7 +35,7 @@ header {
 }
 footer {
   background-color: #f4b393;
-  height: 140px;
+  height: 90px;
   width: 320px;
   position: absolute;
   bottom: 0;
@@ -45,24 +45,28 @@ footer {
   align-items: center;
 }
 main {
-  overflow: scroll;
+  overflow-y: auto;
   scrollbar-width: none;
   text-align: center;
   padding: 10px;
 }
 #small-icon {
-  width: 75px;
-  height: 75px;
+  width: 55px;
+  height: 55px;
 }
 
 .menu-btn {
-  width: 75px;
-  height: 75px;
+  width: 55px;
+  height: 55px;
   background-color: #9dd1f1;
   border-radius: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.menu-btn > img {
+  width: 35px;
+  height: 35px;
 }
 .column {
   display: flex;

@@ -3,8 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 img {
-  width: 320px;
+  width: 220px;
   margin: 20px 0;
 }
 h1,
@@ -12,8 +18,8 @@ p {
   margin: 20px 0;
 }
 #mobile-app {
-  width: 430px;
-  height: 932px;
+  width: 320px;
+  height: 1805px;
   background-color: #f4b393;
   text-align: center;
 }

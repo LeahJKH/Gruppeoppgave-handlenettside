@@ -45,10 +45,15 @@ footer {
   align-items: center;
 }
 main {
+  margin-top: 80px;
+  max-height: 444px;
   overflow-y: auto;
-  scrollbar-width: none;
+  overflow-x: hidden;
   text-align: center;
   padding: 10px;
+}
+main::-webkit-scrollbar {
+  width: 0;
 }
 #small-icon {
   width: 55px;

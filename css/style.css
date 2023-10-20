@@ -6,6 +6,17 @@
 
 body {
   font-family: sans-serif;
+  display: flex;   
+  justify-content: center;   
+  align-items: center;   
+  overflow: hidden; 
+}
+
+.mobileBod {
+  width: 320px;
+  height: 1805px;
+  background-color: #97b9b9;
+  text-align: center;
 }
 
 .navbar {

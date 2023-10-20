@@ -30,6 +30,7 @@ const users = [
 function createUserCard(user) {
   const randomCardIndex = Math.floor(Math.random() * names.length);
   const user = users[randomCardIndex];
+
   userCard.innerHTML = `
     <img src=${image[randomCardIndex].src} alt="User" class="user-img" />
     <h2>${image[randomCardIndex].title}</h2>
@@ -46,3 +47,14 @@ function createUserCard(user) {
 for (let i = 0; i < 4; i++) {
   createUserCard();
 }
+// Test
+//
+// userCard.innerHTML = `
+//   <img src="${user.image.src}" alt="User" class="user-img" />
+//   <h2>${user.name}</h2>
+//   <div class="container">
+//     ${createImageElement(user.image.src, user.image.title).outerHTML}
+//     <h3>${user.title}</h3>
+//     <p>${user.time}</p>
+//   </div>
+// `;

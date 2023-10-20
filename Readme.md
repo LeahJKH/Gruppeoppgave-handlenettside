@@ -9,12 +9,11 @@
 
 -Making the navbar in html
 ----------Andre---------------
--Laget hedder ferdig
--mangler bare Animasjon for hamburger Korte er ferdig
--bare generere random fra js
+-Hedder ferdig (mangler animasjon meny!)
 -Lastet ned nye zip file og implimenterte
 -refitet image i main, gåt fra px til %
 -Forlenget existerende array i Js
 -create image array added Js
 -forsøkt å lage "cards" dynamisk
 -Fikset rettskriving og Js script i Htlml
+-må fixe card generator!

@@ -20,11 +20,20 @@ footer {
   background-color: #f4b393;
   height: 140px;
   width: 430px;
+  position: absolute;
+  bottom: 34%;
   display: flex;
-  justify-self: end;
-  align-self: flex-end;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
+.menu-btn {
+  width: 75px;
+  height: 75px;
+  background-color: #9dd1f1;
+  border-radius: 50px;
+}
 .column {
   display: flex;
   flex-direction: column;

@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mobileBod {
+  width: 430px;
+  height: 932px;
+  background-color: #97b9b9;
+  text-align: center;
+}
+header {
+  background-color: #f4b393;
+  height: 110px;
+  width: 430px;
+  position: absolute;
+  top: 0;
+}
+footer {
+  background-color: #f4b393;
+  height: 140px;
+  width: 430px;
+  display: flex;
+  justify-self: end;
+  align-self: flex-end;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}

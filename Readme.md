@@ -14,4 +14,6 @@
 -bare generere random fra js
 -Lastet ned nye zip file og implimenterte
 -refitet image i main, gåt fra px til %
--create image array added
+-Forlenget existerende array i Js
+-create image array added Js
+-forsøkt å lage "cards" dynamisk

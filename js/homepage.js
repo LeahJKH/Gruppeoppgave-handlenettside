@@ -38,7 +38,7 @@ function createUserCard() {
         ).outerHTML
       }
       <h3>${titles[randomCardIndex]}</h3>
-      <p>${times[randomCardIndex]}</p>
+      <p>${time[randomCardIndex]}</p>
     </div>
   `;
   userCardContainer.appendChild(userCard);

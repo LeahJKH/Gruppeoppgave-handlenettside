@@ -3,47 +3,35 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  font-family: sans-serif;
-  display: flex;   
-  justify-content: center;   
-  align-items: center;   
-  overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
-
-.mobileBod {
+img {
+  width: 220px;
+  margin: 20px 0;
+}
+h1,
+p {
+  margin: 20px 0;
+}
+#mobile-app {
   width: 320px;
   height: 1805px;
-  background-color: #97b9b9;
+  background-color: #f4b393;
   text-align: center;
 }
-
-.navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: green;
-  padding: 10px;
+#loading-bar {
+  width: 300px;
+  height: 30px;
+  margin-top: 30px;
+  border: 2px solid #97b9b9;
 }
-
-.navbar h2{
-  color: white;
+#loading-bar::-webkit-progress-bar {
+  background-color: #9dd1f1;
 }
-
-.cart {
-  background-color: white;
-  color: black;
-  font-size: 30px;
-  padding: 16px;
-  border-radius: 4px;
-}
-
-.cartAmount {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 30px;
-  background-color: blue;
-  color: white;
+#loading-bar::-webkit-progress-value {
+  background-color: #ceec97;
 }

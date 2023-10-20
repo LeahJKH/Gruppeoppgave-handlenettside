@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  color: #130f1a;
+  max-width: 430px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.mobileBod {
+  width: 320px;
+  height: 1805px;
+  background-color: #97b9b9;
+  text-align: center;
+}
+
+header,
+main,
+footer {
+  max-width: 430px;
+}
+/* ---------------
+!!!!!! Text !!!!!
+------------------ */
+h2 {
+  margin-left: 30%;
+}
+h3,
+h4 {
+  margin-top: 10px;
+}
+/* ---------------
+!!!!!! Header !!!!!
+------------------ */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f48393;
+  padding-right: 10px;
+}
+#Logo {
+  width: 100px;
+  height: 100px;
+}
+/* !!!! Hamburger menu !!!!! */
+#menu-ham {
+  width: 35px;
+  height: 35px;
+}
+/* --------------------
+!!!!!! Main !!!!!!!!
+------------------ */
+main {
+  margin: 20px 20px;
+}
+.food {
+  background-color: #ceec97;
+  text-align: center;
+  border-radius: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding: 5px;
+}
+.User {
+  display: flex;
+  justify-content: start;
+}
+.user-img {
+  width: 60px;
+  border-radius: 60px;
+}
+.food-img {
+  max-width: 360px;
+  padding: 10px;
+  /* image-resolution: ; */
+}
+
+/* ---------------
+!!!!!! Fotter !!!!!
+------------------ */
+footer {
+  display: flex;
+  background-color: #f48393;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.menu-btn {
+  width: 55px;
+  height: 55px;
+  background-color: #9dd1f1;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-btn > img {
+  width: 35px;
+  height: 35px;
+}

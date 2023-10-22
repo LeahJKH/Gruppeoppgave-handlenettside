@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const loggInn = document.querySelector("#logg-inn");
   const userPageName = document.querySelector("#logg-user");
   const errorMsg = document.querySelector("#error-msg");
+  const burger = document.querySelector("#burger");
   //!! objects !!//
 
   //!! in page pages !!//
@@ -54,8 +55,8 @@ document.addEventListener("DOMContentLoaded", function () {
       startpage();
     } else {
       errorMsg.textContent = "Please enter both a username and a password.";
-    }
-  });
+    } // error handler for creating an account
+  }); // create user function
 
   loggInn.addEventListener("click", function () {
     const usernames = JSON.parse(localStorage.getItem("userNames")) || [];
@@ -71,22 +72,21 @@ document.addEventListener("DOMContentLoaded", function () {
         loggedInPassword = enteredPassword;
         loggedIn = true;
         break;
-      }
+      } // checks if the login is right
     }
-
     if (loggedIn) {
       startpage();
     } else {
       errorMsg.textContent = "Login failed. Please check your credentials.";
-    }
-  });
+    } // error handler
+  }); // login function
 
   function startpage() {
     userPageName.textContent = loggedInUsername;
     loggedinPage.style.display = "flex";
     loggedOutPage.style.display = "none";
     cardcard();
-  }
+  } // starts the page making you logged inn
   //!!login logic!!//
 
   //!! main page logic!!//
@@ -94,6 +94,10 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let i = 0; i < 4; i++) {
       cardSpace.innerHTML += `<section> <img src=""> <h3>i made food</h3> <p>yes i did</p> </div></section>`;
     }
-  }
+  } // makes cards for the main page after logging in
 });
+
+/*burger.addEventListener("mouseover", function () {
+  burger.src = "./icons/animated/burger/animatedBurger.gif";
+}); will make working*/
 //!! main page logic!!//

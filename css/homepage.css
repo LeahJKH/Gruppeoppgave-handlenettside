@@ -78,7 +78,7 @@ main {
   border-radius: 60px;
 }
 .food-img {
-  max-width: 360px;
+  max-width: 100%;
   padding: 10px;
   /* image-resolution: ; */
 }

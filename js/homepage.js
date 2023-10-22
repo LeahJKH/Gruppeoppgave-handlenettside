@@ -1,17 +1,60 @@
 const userCard = document.querySelector("User-cards");
+// Arrays
+const users = [
+  {
+    name: "Anna",
+    title: "mmmmm, tasty",
+    time: "10 min",
+    image: { src: "hamburger.avif", title: "Hamburger title" },
+  },
+  {
+    name: "Roger",
+    title: "You gotta try this",
+    time: "20 min",
+    image: { src: "pasta.avif", title: "Pasta title" },
+  },
+  {
+    name: "Mina",
+    title: "See what I made",
+    time: "45 min",
+    image: { src: "pizza.avif", title: "Pizza title" },
+  },
+  {
+    name: "Hans",
+    title: "Easy and fast",
+    time: "60 min",
+    image: { src: "Salad.avif", title: "Salad title" },
+  },
+];
+//  Function to create a user card
+function createUserCard(user) {
+  const randomCardIndex = Math.floor(Math.random() * names.length);
+  const user = users[randomCardIndex];
 
-const names = ["Anna", "Roger", "Mina"];
-const titles = ["mmmmm, tasty", "You gotta try this", "See what i made"];
+  userCard.innerHTML = `
+    <img src=${image[randomCardIndex].src} alt="User" class="user-img" />
+    <h2>${image[randomCardIndex].title}</h2>
+    <div class="container">
+      }
+      <h3>${titles[randomCardIndex]}</h3>
+      <p>${time[randomCardIndex]}</p>
+    </div>
+  `;
+  userCard.appendChild(userCard);
+}
 
-function createCards() {
-  let randomCard = Math.floor(Math.random() * 3);
-  userCard.innerHTML += `
-<img src="" alt="User" />
-<h2>${names[randomCard]}</h2>
-<div class="conainer">
-<img src="" alt="" />
-<h3>${titles[randomCard]}</h3>
-<p></p>
-</div>
-`;
-} // creates a card each time called upon
+// Create multiple user cards
+for (let i = 0; i < 4; i++) {
+  createUserCard();
+}
+// Test
+//
+// userCard.innerHTML = `
+//   <img src="${user.image.src}" alt="User" class="user-img" />
+//   <h2>${user.name}</h2>
+//   <div class="container">
+//     ${createImageElement(user.image.src, user.image.title).outerHTML}
+//     <h3>${user.title}</h3>
+//     <p>${user.time}</p>
+//   </div>
+// `;

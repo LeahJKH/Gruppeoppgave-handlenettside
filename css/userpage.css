@@ -43,12 +43,40 @@ footer {
   align-items: center;
 }
 main {
+  padding: 10px;
+}
+#loggedinnpage {
+  text-align: center;
   margin-top: 80px;
   max-height: 444px;
   overflow-y: auto;
   overflow-x: hidden;
-  text-align: center;
-  padding: 10px;
+}
+#loggscreen {
+  margin-top: 250px;
+}
+#loggscreen > input {
+  width: 300px;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  text-indent: 20px;
+  border: 2px solid #769696;
+}
+#loggscreen > .row > button {
+  background-color: #97b9b9;
+  margin: 10px auto;
+  border: 2px solid #769696;
+  width: 85px;
+  height: 42px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#loggscreen > .row > button:hover {
+  background-color: #769696;
+}
+#loggscreen > .row > button:active {
+  border: 2px solid #97b9b9;
 }
 main::-webkit-scrollbar {
   width: 0;

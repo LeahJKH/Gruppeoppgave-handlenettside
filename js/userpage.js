@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const userPageName = document.querySelector("#logg-user");
   const errorMsg = document.querySelector("#error-msg");
   const burger = document.querySelector("#burger");
+  const newPost = document.querySelector("#newpost");
   //!! objects !!//
 
   //!! in page pages !!//
@@ -85,19 +86,24 @@ document.addEventListener("DOMContentLoaded", function () {
     userPageName.textContent = loggedInUsername;
     loggedinPage.style.display = "flex";
     loggedOutPage.style.display = "none";
-    cardcard();
   } // starts the page making you logged inn
   //!!login logic!!//
 
   //!! main page logic!!//
-  function cardcard() {
-    for (let i = 0; i < 4; i++) {
+  function card() {
+    for (let i = 0; i < 1; i++) {
       cardSpace.innerHTML += `<section> <img src=""> <h3>i made food</h3> <p>yes i did</p> </div></section>`;
     }
   } // makes cards for the main page after logging in
+  newPost.addEventListener("click", function () {
+    card();
+  });
+
+  //!! main page logic!!//
 });
 
+//!! unfinished !!//
 /*burger.addEventListener("mouseover", function () {
   burger.src = "./icons/animated/burger/animatedBurger.gif";
 }); will make working*/
-//!! main page logic!!//
+//!! unfinished !!//

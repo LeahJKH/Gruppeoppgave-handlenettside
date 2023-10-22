@@ -2,9 +2,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const cardSpace = document.querySelector("#cardcontain");
   const username = document.querySelector("#Username");
   const password = document.querySelector("#password");
-  const createUser = document.querySelector("#Username");
-  const loggInn = document.querySelector("#create-user");
+  const createUser = document.querySelector("#create-user");
+  const loggInn = document.querySelector("#logg-inn");
   const userPageName = document.querySelector("#logg-user");
+
+  const loggedinPage = document.querySelector("#loggedinnpage");
+  const loggedOutPage = document.querySelector("#loggscreen");
 
   const homePage = document.querySelector("#home-page");
   const shoppingCartPage = document.querySelector("#shopping-page");
@@ -21,23 +24,56 @@ document.addEventListener("DOMContentLoaded", function () {
     location.href = "./userpage.html";
   });
   //const recepice = document.querySelector("#recepiece-page").addEventListener("click", function () {});;
-
-  let loggedInnUsername = "";
-  let loggedInnPassword = "";
+  let loggedInUsername = "";
+  let loggedInPassword = "";
 
   createUser.addEventListener("click", function () {
-    localStorage.setItem("userNameS", username.value);
-    localStorage.setItem("passWordS", password.value);
-    loggedInnUsername = localStorage.getItem("userNameS");
-    loggedInnPassword = localStorage.getItem("passWordS");
-    startpage();
+    const usernames = JSON.parse(localStorage.getItem("userNames")) || [];
+    const passwords = JSON.parse(localStorage.getItem("passWords")) || [];
+    const newUsername = username.value;
+    const newPassword = password.value;
+
+    if (newUsername && newPassword) {
+      usernames.push(newUsername);
+      passwords.push(newPassword);
+      localStorage.setItem("userNames", JSON.stringify(usernames));
+      localStorage.setItem("passWords", JSON.stringify(passwords));
+      loggedInUsername = newUsername;
+      loggedInPassword = newPassword;
+      startpage();
+    } else {
+      console.log("Please enter both a username and a password.");
+    }
   });
-  loggInn.addEventListener("click", function () {});
+
+  loggInn.addEventListener("click", function () {
+    const usernames = JSON.parse(localStorage.getItem("userNames")) || [];
+    const passwords = JSON.parse(localStorage.getItem("passWords")) || [];
+    const enteredUsername = username.value;
+    const enteredPassword = password.value;
+
+    let loggedIn = false;
+
+    for (let i = 0; i < usernames.length; i++) {
+      if (usernames[i] === enteredUsername && passwords[i] === enteredPassword) {
+        loggedInUsername = enteredUsername;
+        loggedInPassword = enteredPassword;
+        loggedIn = true;
+        break;
+      }
+    }
+
+    if (loggedIn) {
+      startpage();
+    } else {
+      console.log("Login failed. Please check your credentials.");
+    }
+  });
 
   function startpage() {
-    userPageName.textContent = loggedInnUsername;
-    console.log(loggedInnPassword);
-    console.log(loggedInnUsername);
+    userPageName.textContent = loggedInUsername;
+    loggedinPage.style.display = "flex";
+    loggedOutPage.style.display = "none";
     cardcard();
   }
 

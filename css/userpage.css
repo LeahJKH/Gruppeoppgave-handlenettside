@@ -46,6 +46,7 @@ main {
   padding: 10px;
 }
 #loggedinnpage {
+  display: none;
   text-align: center;
   margin-top: 80px;
   max-height: 444px;
@@ -54,6 +55,8 @@ main {
 }
 #loggscreen {
   margin-top: 250px;
+  display: flex;
+  flex-direction: column;
 }
 #loggscreen > input {
   width: 300px;

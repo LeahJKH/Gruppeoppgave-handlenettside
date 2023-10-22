@@ -23,6 +23,8 @@ p {
   background-color: #f4b393;
   text-align: center;
 }
+
+/*!!LOADING BAR!!*/
 #loading-bar {
   width: 300px;
   height: 30px;
@@ -35,3 +37,4 @@ p {
 #loading-bar::-webkit-progress-value {
   background-color: #ceec97;
 }
+/*!!LOADING BAR!!*/

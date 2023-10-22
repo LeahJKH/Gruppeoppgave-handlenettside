@@ -58,3 +58,20 @@ for (let i = 0; i < 4; i++) {
 //     <p>${user.time}</p>
 //   </div>
 // `;
+
+// PAGE SWITCHERS//
+const homePage = document.querySelector("#home-page");
+const shoppingCartPage = document.querySelector("#shopping-page");
+const userPage = document.querySelector("#user-page");
+
+//const listpage = document.querySelector("#list-page").addEventListener("click", function () {});;
+homePage.addEventListener("click", function () {
+  location.href = "./homepage.html";
+});
+shoppingCartPage.addEventListener("click", function () {
+  location.href = "./handlekurv.html";
+});
+userPage.addEventListener("click", function () {
+  location.href = "./userpage.html";
+});
+//const recepice = document.querySelector("#recepiece-page").addEventListener("click", function () {});;

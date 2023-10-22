@@ -17,21 +17,26 @@ document.addEventListener("DOMContentLoaded", function () {
   //!! in page pages !!//
 
   //!! current pages !!//
-  const homePage = document.querySelector("#home-page");
-  const shoppingCartPage = document.querySelector("#shopping-page");
-  const userPage = document.querySelector("#user-page");
+  const pages = {
+    homePage: document.querySelector("#home-page"),
+    shoppingCartPage: document.querySelector("#shopping-page"),
+    userPage: document.querySelector("#user-page"),
+    listpage: document.querySelector("#list-page"),
+  };
   //!! current pages !!//
 
   //!! Page switchers !!//
-  //const listpage = document.querySelector("#list-page").addEventListener("click", function () {});;
   //const recepice = document.querySelector("#recepiece-page").addEventListener("click", function () {});;
-  homePage.addEventListener("click", function () {
+  pages.listpage.addEventListener("click", function () {
+    location.href = "./list.html";
+  }); // makes the button clickable and changes page
+  pages.homePage.addEventListener("click", function () {
     location.href = "./homepage.html";
   }); // makes the button clickable and changes page
-  shoppingCartPage.addEventListener("click", function () {
+  pages.shoppingCartPage.addEventListener("click", function () {
     location.href = "./handlekurv.html";
   }); // makes the button clickable and changes page
-  userPage.addEventListener("click", function () {
+  pages.userPage.addEventListener("click", function () {
     location.href = "./userpage.html";
   }); // makes the button clickable and changes page
   //!! Page switchers !!//

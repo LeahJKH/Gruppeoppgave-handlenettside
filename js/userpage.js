@@ -1,29 +1,40 @@
 document.addEventListener("DOMContentLoaded", function () {
+  //!! objects !!//
   const cardSpace = document.querySelector("#cardcontain");
   const username = document.querySelector("#Username");
   const password = document.querySelector("#password");
   const createUser = document.querySelector("#create-user");
   const loggInn = document.querySelector("#logg-inn");
   const userPageName = document.querySelector("#logg-user");
+  const errorMsg = document.querySelector("#error-msg");
+  //!! objects !!//
 
+  //!! in page pages !!//
   const loggedinPage = document.querySelector("#loggedinnpage");
   const loggedOutPage = document.querySelector("#loggscreen");
+  //!! in page pages !!//
 
+  //!! current pages !!//
   const homePage = document.querySelector("#home-page");
   const shoppingCartPage = document.querySelector("#shopping-page");
   const userPage = document.querySelector("#user-page");
+  //!! current pages !!//
 
+  //!! Page switchers !!//
   //const listpage = document.querySelector("#list-page").addEventListener("click", function () {});;
+  //const recepice = document.querySelector("#recepiece-page").addEventListener("click", function () {});;
   homePage.addEventListener("click", function () {
     location.href = "./homepage.html";
-  });
+  }); // makes the button clickable and changes page
   shoppingCartPage.addEventListener("click", function () {
     location.href = "./handlekurv.html";
-  });
+  }); // makes the button clickable and changes page
   userPage.addEventListener("click", function () {
     location.href = "./userpage.html";
-  });
-  //const recepice = document.querySelector("#recepiece-page").addEventListener("click", function () {});;
+  }); // makes the button clickable and changes page
+  //!! Page switchers !!//
+
+  //!!login logic!!//
   let loggedInUsername = "";
   let loggedInPassword = "";
 
@@ -42,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
       loggedInPassword = newPassword;
       startpage();
     } else {
-      console.log("Please enter both a username and a password.");
+      errorMsg.textContent = "Please enter both a username and a password.";
     }
   });
 
@@ -66,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (loggedIn) {
       startpage();
     } else {
-      console.log("Login failed. Please check your credentials.");
+      errorMsg.textContent = "Login failed. Please check your credentials.";
     }
   });
 
@@ -76,10 +87,13 @@ document.addEventListener("DOMContentLoaded", function () {
     loggedOutPage.style.display = "none";
     cardcard();
   }
+  //!!login logic!!//
 
+  //!! main page logic!!//
   function cardcard() {
     for (let i = 0; i < 4; i++) {
       cardSpace.innerHTML += `<section> <img src=""> <h3>i made food</h3> <p>yes i did</p> </div></section>`;
     }
   }
 });
+//!! main page logic!!//

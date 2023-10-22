@@ -1,3 +1,4 @@
+/*main page styles and general*/
 * {
   margin: 0;
   padding: 0;
@@ -8,16 +9,19 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background-color: rgb(50, 49, 49);
 }
-/* these are the mobile sizes
- width: 430px;
-  height: 932px;
-  */
+/*main page styles and general*/
+
+/* main page styling*/
 .mobileBod {
   width: 320px;
-  height: 1805px;
+  height: 1800px;
   background-color: #97b9b9;
   text-align: center;
+}
+.mobile {
+  border: 10px solid grey;
 }
 header {
   background-color: #f4b393;
@@ -45,14 +49,19 @@ footer {
 main {
   padding: 10px;
 }
-#loggedinnpage {
-  display: none;
-  text-align: center;
-  margin-top: 80px;
-  max-height: 444px;
-  overflow-y: auto;
-  overflow-x: hidden;
+section {
+  width: 300px;
+  height: 200px;
+  margin-top: 20px;
+  background-color: #5e5a5a;
 }
+section > div {
+  display: flex;
+  flex-direction: column;
+}
+/* main page styling*/
+
+/*logg inn screen styles */
 #loggscreen {
   margin-top: 250px;
   display: flex;
@@ -81,14 +90,36 @@ main {
 #loggscreen > .row > button:active {
   border: 2px solid #97b9b9;
 }
+#error-msg {
+  color: rgb(213, 24, 24);
+}
+/*logg inn screen styles */
+
+/*main page styles*/
 main::-webkit-scrollbar {
   width: 0;
 }
+#loggedinnpage {
+  display: none;
+  text-align: center;
+  margin-top: 80px;
+  max-height: 444px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+/*main page styles*/
+
+/*header og footer objects*/
 #small-icon {
   width: 55px;
   height: 55px;
 }
+#home-page {
+  cursor: pointer;
+}
+/*header og footer*/
 
+/*multiuse classes*/
 .menu-btn {
   width: 55px;
   height: 55px;
@@ -97,6 +128,7 @@ main::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .menu-btn > img {
   width: 35px;
@@ -110,13 +142,9 @@ main::-webkit-scrollbar {
   display: flex;
   flex-direction: row;
 }
-section {
-  width: 300px;
-  height: 200px;
-  margin-top: 20px;
-  background-color: #5e5a5a;
-}
-section > div {
-  display: flex;
-  flex-direction: column;
-}
+/*multiuse classes*/
+
+/* these are the mobile sizes
+ width: 430px;
+  height: 932px;
+  */

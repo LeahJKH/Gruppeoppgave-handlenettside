@@ -7,6 +7,8 @@
 -gjorde CSS, JS, HTML for userpage screenen
 -lagde login page
 -lagde page switchers
+-made things more uniform
+-made the base for list
 ----------Alexander--------
 
 -Making the navbar in html

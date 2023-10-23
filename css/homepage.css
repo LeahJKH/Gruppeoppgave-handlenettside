@@ -148,3 +148,9 @@ footer {
   padding: 10px 20px;
   background-color: #9dd1f1;
 }
+.likeButtonstyle {
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  background-color: #9dd1f1;
+}

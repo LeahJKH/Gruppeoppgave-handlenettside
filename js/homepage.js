@@ -1,14 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const userCard = document.querySelector("#user-cards"); // Corrected the selector
+  const userCard = document.querySelector("#user-cards");
+  const userName = document.querySelector("#username");
 
-  //!! current pages !!//
+  // Define pages
   const pages = {
     homePage: document.querySelector("#home-page"),
     shoppingCartPage: document.querySelector("#shopping-page"),
     userPage: document.querySelector("#user-page"),
     listpage: document.querySelector("#list-page"),
   };
-  //!! current pages !!//
+
+  // Set the username based on sessionStorage
+  userName.textContent = `${sessionStorage.getItem("currName")}'s feed`;
 
   const users = [
     {
@@ -37,56 +40,69 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   ];
 
-  // Like button function
-  const likeButton = document.getElementById("likeButton");
-  const likeCount = document.getElementById("likeCount");
-  let count = 0;
+  // Create a function to handle the like button
+  function handleLikeButton(likeButton, likeCount, i) {
+    let count = 0;
+    const savedCount = localStorage.getItem(`likeCount${i}`); // Use a unique key for each like button
 
-  const savedCount = localStorage.getItem("likeCount");
-  if (savedCount) {
-    count = parseInt(savedCount);
-    likeCount.innerText = count;
+    if (savedCount) {
+      count = parseInt(savedCount);
+      likeCount.innerText = count;
+    }
+
+    likeButton.addEventListener("click", () => {
+      count++;
+      likeCount.innerText = count;
+      localStorage.setItem(`likeCount${i}`, count.toString()); // Use a unique key for each like button
+    });
   }
 
-  likeButton.addEventListener("click", () => {
-    count++;
-    likeCount.innerText = count;
-    localStorage.setItem("likeCount", count.toString());
-  });
-  //Create card
+  // Create user cards
   function createUserCard() {
     const randomCardIndex = Math.floor(Math.random() * users.length);
 
-    userCardElement.innerHTML = `
-    <img src="${users[randomCardIndex].image.src}" alt="User" class="user-img" />
-    <h2>${users[randomCardIndex].image.title}</h2>
-    <div class="container">
-      <h3>${users[randomCardIndex].title}</h3>
-      <p>${users[randomCardIndex].time}</p>
-    </div>
-  `;
+    for (let i = 0; i < 4; i++) {
+      let differentLikes = `<button id="likeButton${i}" class="likeButtonstyle">Like</button>
+      <span id="likeCount${i}">0</span>`;
 
-    userCard.appendChild(userCardElement);
+      // Create a new user card element
+      const userCardElement = document.createElement("div");
+      userCardElement.innerHTML = `<div style="border: 2px solid #9fb96e">
+        <img src="${users[randomCardIndex].image.src}" alt="User" class="user-img" />
+        <h2>${users[randomCardIndex].image.title}</h2>
+        <div class="container">
+          <h3>${users[randomCardIndex].title}</h3>
+          <p>${users[randomCardIndex].time}</p>
+          ${differentLikes}
+        </div>
+      </div>`;
+
+      // Append the user card to the DOM
+      userCard.appendChild(userCardElement);
+
+      // Select the likeButton and likeCount elements
+      const likeButton = document.getElementById(`likeButton${i}`);
+      const likeCount = document.getElementById(`likeCount${i}`);
+
+      // Handle the like button for this card
+      handleLikeButton(likeButton, likeCount, i);
+    }
   }
 
   // Create multiple user cards
-  for (let i = 0; i < 4; i++) {
-    createUserCard();
-  }
+  createUserCard();
 
-  //!! Page switchers !!//
-  //const recepice = document.querySelector("#recepiece-page").addEventListener("click", function () {});;
+  // Add click event listeners for page navigation
   pages.listpage.addEventListener("click", function () {
     location.href = "./list.html";
-  }); // makes the button clickable and changes page
+  });
   pages.homePage.addEventListener("click", function () {
     location.href = "./homepage.html";
-  }); // makes the button clickable and changes page
+  });
   pages.shoppingCartPage.addEventListener("click", function () {
     location.href = "./handlekurv.html";
-  }); // makes the button clickable and changes page
+  });
   pages.userPage.addEventListener("click", function () {
     location.href = "./userpage.html";
-  }); // makes the button clickable and changes page
-  //!! Page switchers !!//
+  });
 });

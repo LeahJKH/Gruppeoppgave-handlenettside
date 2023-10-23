@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
       passwords.push(newPassword);
       localStorage.setItem("userNames", JSON.stringify(usernames));
       localStorage.setItem("passWords", JSON.stringify(passwords));
+
       loggedInUsername = newUsername;
       loggedInPassword = newPassword;
       startpage();
@@ -91,6 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
     userPageName.textContent = loggedInUsername;
     loggedinPage.style.display = "flex";
     loggedOutPage.style.display = "none";
+    sessionStorage.setItem("currName", loggedInUsername);
   } // starts the page making you logged inn
   //!!login logic!!//
 

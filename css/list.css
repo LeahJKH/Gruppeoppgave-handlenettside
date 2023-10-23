@@ -64,11 +64,34 @@ main::-webkit-scrollbar {
   width: 0;
 }
 #list {
+  display: flex;
+  flex-direction: column;
   width: 300px;
   height: fit-content;
   margin-top: 80px;
   background-color: #ceec97;
   border: 3px solid #9fb96e;
+  border-radius: 10px;
+}
+.addItemInput {
+  padding: 10px 20px;
+  margin: 10px 10px;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+}
+.addItemButton,
+.removeItemButton {
+  background-color: #9dd1f1;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-weight: bold;
+}
+li {
+  padding: 10px 20px;
+  font-size: 26px;
 }
 /* ---------
 !!! Button !!!

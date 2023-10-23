@@ -64,6 +64,16 @@ header {
 main {
   margin: 20px 20px;
 }
+#like-btn {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 10px 5px;
+}
+#likeCount {
+  padding: 0px 10px;
+  font-weight: bold;
+}
 .food {
   background-color: #ceec97;
   text-align: center;
@@ -114,6 +124,10 @@ footer {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+/* ---------------
+!!!!!! Button !!!!!
+------------------ */
+
 .menu-btn {
   width: 55px;
   height: 55px;
@@ -127,4 +141,10 @@ footer {
 .menu-btn > img {
   width: 35px;
   height: 35px;
+}
+#likeButton {
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  background-color: #9dd1f1;
 }

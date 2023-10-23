@@ -26,9 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let li = document.createElement("li");
     li.textContent = addItemInput.value;
     let appendedItem = list.appendChild(li);
-    for (let i = 0; i < appendedItem.length; i++) {
-      appendedItem[i].style.color = lastPickedColor;
-    }
     addItemInput.value = "";
   });
   //!! Remove item !!//
@@ -37,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let li = document.querySelector("li:last-child");
     list.removeChild(li);
   });
-
+  //
   //!! Page switchers !!//
   //const recepice = document.querySelector("#recepiece-page").addEventListener("click", function () {});;
   pages.listpage.addEventListener("click", function () {

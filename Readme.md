@@ -19,3 +19,4 @@
 -fotter ferdig
 -added like button.
 -added local storeg til like button.
+-fixet css

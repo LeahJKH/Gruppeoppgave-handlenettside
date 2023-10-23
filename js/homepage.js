@@ -11,7 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   // Set the username based on sessionStorage
-  userName.textContent = `${sessionStorage.getItem("currName")}'s feed`;
+  if (sessionStorage.getItem("currName") === null) {
+    userName.textContent = `Guest feed`;
+  } else {
+    userName.textContent = `${sessionStorage.getItem("currName")}'s feed`;
+  }
 
   const users = [
     {

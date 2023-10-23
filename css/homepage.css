@@ -32,11 +32,12 @@ footer {
 !!!!!! Text !!!!!
 ------------------ */
 h2 {
-  margin-left: 30%;
+  font-size: 30px;
+  margin: 15px 0px;
 }
 h3,
-h4 {
-  margin-top: 10px;
+p {
+  margin: 5px 0px;
 }
 /* ---------------
 !!!!!! Header !!!!!
@@ -84,11 +85,13 @@ main {
 }
 .User {
   display: flex;
-  justify-content: start;
+  justify-content: space-around;
+  align-items: center;
 }
 .user-img {
   width: 60px;
   border-radius: 60px;
+  margin: 10px 0px;
 }
 .food-img {
   max-width: 100%;
@@ -106,12 +109,15 @@ main {
   overflow-x: hidden;
 }
 .user-food {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #ceec97;
   text-align: center;
   border-radius: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding: 5px;
+  padding: 15px;
   margin-top: 10px;
 }
 /* ---------------
@@ -151,6 +157,7 @@ footer {
 .likeButtonstyle {
   border: none;
   border-radius: 30px;
+  margin: 10px 0px;
   padding: 10px 20px;
   background-color: #9dd1f1;
 }

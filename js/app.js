@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const loadingBar = document.querySelector("#loading-bar");
   let count = 1;
-  let intervalID = setInterval(increment, 100);
+  let intervalID = setInterval(increment, 100); // the speed it loads
 
   function increment() {
     count++;

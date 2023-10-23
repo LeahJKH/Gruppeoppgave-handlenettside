@@ -1,3 +1,4 @@
+/*main page styles and general*/
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +9,9 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background-color: rgb(50, 49, 49);
 }
+/*main page styles and general*/
 img {
   width: 220px;
   margin: 20px 0;
@@ -17,12 +20,17 @@ h1,
 p {
   margin: 20px 0;
 }
+.mobile {
+  border: 10px solid grey;
+}
 #mobile-app {
   width: 320px;
   height: 1805px;
   background-color: #f4b393;
   text-align: center;
 }
+
+/*!!LOADING BAR!!*/
 #loading-bar {
   width: 300px;
   height: 30px;
@@ -35,3 +43,4 @@ p {
 #loading-bar::-webkit-progress-value {
   background-color: #ceec97;
 }
+/*!!LOADING BAR!!*/

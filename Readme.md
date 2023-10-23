@@ -5,15 +5,15 @@
 -gjorde CSS, JS, HTML for loading screenen
 -lagde en temp js for homepage
 -gjorde CSS, JS, HTML for userpage screenen
+-lagde login page
+-lagde page switchers
+-made things more uniform
+-made the base for list
 ----------Alexander--------
 
 -Making the navbar in html
+-Making the header in html
 ----------Andre---------------
--Hedder ferdig (mangler animasjon meny!)
--Lastet ned nye zip file og implimenterte
--refitet image i main, gåt fra px til %
--Forlenget existerende array i Js
--create image array added Js
--forsøkt å lage "cards" dynamisk
--Fikset rettskriving og Js script i Htlml
--må fixe card generator!
+-Laget hedder ferdig
+-bare generere random fra js
+-fotter ferdig

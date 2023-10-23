@@ -13,7 +13,6 @@ body {
 }
 /*main page styles and general*/
 
-/* main page styling*/
 .mobileBod {
   width: 320px;
   height: 1800px;
@@ -49,75 +48,16 @@ footer {
 main {
   padding: 10px;
 }
-/*Section is the cards*/
-section {
+main::-webkit-scrollbar {
+  width: 0;
+}
+#list {
   width: 300px;
-  height: 200px;
-  margin-top: 20px;
+  height: fit-content;
+  margin-top: 80px;
   background-color: #ceec97;
   border: 3px solid #9fb96e;
 }
-section > div {
-  display: flex;
-  flex-direction: column;
-}
-/*Section is the cards*/
-
-/* main page styling*/
-
-/*logg inn screen styles */
-#loggscreen {
-  margin-top: 250px;
-  display: flex;
-  flex-direction: column;
-}
-#loggscreen > input {
-  width: 300px;
-  height: 30px;
-  margin-bottom: 10px;
-  border-radius: 20px;
-  text-indent: 20px;
-  border: 2px solid #769696;
-}
-#loggscreen > .row > button {
-  background-color: #97b9b9;
-  margin: 10px auto;
-  border: 2px solid #769696;
-  width: 85px;
-  height: 42px;
-  border-radius: 20px;
-  cursor: pointer;
-}
-#loggscreen > .row > button:hover {
-  background-color: #769696;
-}
-#loggscreen > .row > button:active {
-  border: 2px solid #97b9b9;
-}
-#error-msg {
-  color: rgb(213, 24, 24);
-}
-/*logg inn screen styles */
-
-/*main page styles*/
-main > div::-webkit-scrollbar {
-  width: 0;
-}
-#loggedinnpage {
-  display: none;
-  text-align: center;
-  margin-top: 80px;
-  max-height: 444px;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-#newpost {
-  width: 40px;
-  height: 40px;
-  margin-left: 50px;
-  cursor: pointer;
-}
-/*main page styles*/
 
 /*header og footer objects*/
 #small-icon {
@@ -153,8 +93,3 @@ main > div::-webkit-scrollbar {
   flex-direction: row;
 }
 /*multiuse classes*/
-
-/* these are the mobile sizes
- width: 430px;
-  height: 932px;
-  */

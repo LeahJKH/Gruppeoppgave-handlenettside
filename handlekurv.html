@@ -1,31 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/Handlekurv.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="container">
-        <div class="box">
-            <img src="./images/lasagne.jpg" alt="">
-                <button class="cart-btn">Add to cart</button>
-        </div>
-        <div class="box">
-            <img src="./images/french.fries.burger.jpg" alt="">
-                <button class="cart-btn">Add to cart</button>
-        </div>
-        <div class="box">
-            <img src="./images/pizza.jpg" alt="">
-                <button class="cart-btn">Add to cart</button>
-        </div>
-        <div class="cart">
-            <i class="bi bi-cart"></i>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/Handlekurv.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <script src="./js/handlekurv.js" defer></script>
+    <title>Handlekurv</title>
+  </head>
+  <body>
+    <div class="mobile">
+      <div class="mobileBod">
+        <header>
+          <img src="./images/No-bg.png" alt="" id="small-icon" />
+          <h1 id="home-page">Easy Food Trade</h1>
+          <img src="./icons/animated/burger/burger.png" alt="" id="burger" />
+        </header>
+
+        <main>
+          <div class="cart">
+            <i class="bi bi-cart" id="cartPic"></i>
             <span class="count">10</span>
-        </div>
+          </div>
+          <div class="container">
+            <div class="box">
+              <img src="./images/lasagne.jpg" alt="" />
+              <button class="cart-btn">Add to cart</button>
+            </div>
+            <div class="box">
+              <img src="./images/french.fries.burger.jpg" alt="" />
+              <button class="cart-btn">Add to cart</button>
+            </div>
+            <div class="box">
+              <img src="./images/pizza.jpg" alt="" />
+              <button class="cart-btn">Add to cart</button>
+            </div>
+          </div>
+        </main>
+
+        <footer>
+          <div class="menu-btn" id="list-page">
+            <img src="./icons/footerIcons/list.png" alt="" class="menu-img" />
+          </div>
+          <div class="menu-btn" id="recepiece-page">
+            <img src="./icons/footerIcons/book.png" alt="" class="menu-img" />
+          </div>
+          <div class="menu-btn" id="shopping-page">
+            <img src="./icons/footerIcons/shoppingcart.png" alt="" class="menu-img" />
+          </div>
+          <div class="menu-btn" id="user-page">
+            <img src="./icons/footerIcons/user.png" alt="" class="menu-img" />
+          </div>
+        </footer>
+      </div>
     </div>
-    </div>
-</body>
+  </body>
 </html>

@@ -1,3 +1,4 @@
+/*main page styles and general*/
 * {
   margin: 0;
   padding: 0;
@@ -5,17 +6,19 @@
 }
 body {
   display: flex;
-  flex-direction: column;
-  margin-inline: auto;
-  color: #130f1a;
-  max-width: 430px;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background-color: rgb(50, 49, 49);
+}
+/*main page styles and general*/
+
+.mobile {
+  border: 10px solid grey;
 }
 .mobileBod {
   width: 320px;
-  height: 1805px;
+  height: 1800px;
   background-color: #97b9b9;
   text-align: center;
 }
@@ -43,7 +46,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #f48393;
+  background-color: #f4b393;
   padding-right: 10px;
 }
 #Logo {
@@ -82,13 +85,31 @@ main {
   padding: 10px;
   /* image-resolution: ; */
 }
-
+main::-webkit-scrollbar {
+  width: 0;
+}
+main {
+  text-align: center;
+  margin-top: 10px;
+  max-height: 390px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.user-food {
+  background-color: #ceec97;
+  text-align: center;
+  border-radius: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding: 5px;
+  margin-top: 10px;
+}
 /* ---------------
 !!!!!! Fotter !!!!!
 ------------------ */
 footer {
   display: flex;
-  background-color: #f48393;
+  background-color: #f4b393;
   justify-content: space-around;
   padding-top: 10px;
   padding-bottom: 10px;

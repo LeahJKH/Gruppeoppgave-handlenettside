@@ -3,58 +3,117 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgb(50, 49, 49);
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap");
 body {
   font-family: "Playpen Sans", cursive;
 }
+.mobileBod {
+  margin-top: -20px;
+  width: 320px;
+  height: 1800px;
+  background-color: #97b9b9;
+  text-align: center;
+}
+.mobile {
+  border: 10px solid grey;
+}
+
+/*header og footer objects*/
+#small-icon {
+  width: 55px;
+  height: 55px;
+}
+#home-page {
+  cursor: pointer;
+}
+/*header og footer*/
+header {
+  background-color: #f4b393;
+  height: 80px;
+  width: 320px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+footer {
+  background-color: #f4b393;
+  height: 90px;
+  width: 320px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 
 .container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 15%;
+  width: 200px;
+  margin: 20px auto;
 }
 
 .box {
-  margin-top: 10px;
+  margin: 15px auto;
   padding: 5px;
-  width: 450px;
+  width: 150px;
   text-align: center;
-  background: #ddd;
+  background-color: #778f4c;
   border-radius: 10px;
-  position: relative;
+
   box-shadow: 2px 2px 0px 3px #dddddd63;
   margin-left: 30px;
 }
 
 .box img {
   border-radius: 10px;
+  width: 80px;
 }
 
 .cart-btn {
+  margin-top: 90px;
   padding: 16px 32px;
   border: none;
   border-radius: 4px;
-  background-color: #212121;
+  background-color: #ceec97;
   color: #efefef;
   text-transform: uppercase;
   cursor: pointer;
   outline: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
   transition: all ease 0.5s;
-  position: relative;
+  color: black;
   margin: 14px;
+}
+main {
+  text-align: center;
+  margin-top: 80px;
+  max-height: 444px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .count {
-  position: absolute;
   height: 20px;
   width: 20px;
-  display: inline-flex;
-  top: 5%;
-  left: 90%;
-  transform: translate(-50%, -50%);
+  margin-bottom: -10px;
+  margin-top: 10px;
   background-color: #85cb33;
   justify-content: center;
   align-items: center;
@@ -66,39 +125,24 @@ body {
 }
 
 .cart {
-  position: absolute;
-  right: 3%;
-  top: 5%;
-  margin: auto;
+  margin: 15px 0 0 220px;
   border-radius: 4px;
   height: 60px;
   width: 60px;
   display: flex;
   justify-content: center;
-  background-color: #efefef;
-  margin: 15px;
+  justify-self: end;
   font-size: 20px;
-  background-color: #212121;
-  color: #efefef;
-}
-
-.count {
-  position: absolute;
-  height: 30px;
-  width: 30px;
-  background-color: #85cb33;
-  border-radius: 500px;
-  font-size: 14px;
-  display: inline-flex;
-  justify-content: center;
+  background-color: #ceec97;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   align-items: center;
-  top: 6px;
-  left: 31px;
-  color: #100b00;
-  transform: translate(50%, -50%);
-  z-index: 1;
 }
-
+#cartPic {
+  display: flex;
+}
 .btn {
   padding: 16px 32px;
   border: none;
@@ -114,4 +158,25 @@ body {
   bottom: 10px;
   left: 50%;
   transform: translate(-50%);
+}
+main::-webkit-scrollbar {
+  width: 0;
+}
+main {
+  padding: 10px;
+}
+
+.menu-btn {
+  width: 55px;
+  height: 55px;
+  background-color: #9dd1f1;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.menu-btn > img {
+  width: 35px;
+  height: 35px;
 }

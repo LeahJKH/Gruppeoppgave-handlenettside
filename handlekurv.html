@@ -23,23 +23,31 @@
 
         <main>
           <div class="cart">
-            <i class="bi bi-cart" id="cartPic"></i>
-            <span class="count">10</span>
+        <i class="bi bi-cart"></i>
+        <div class="cartAmount">0</div>
+        </div>
+          <div class="product">
+            Lasagne Price: 19$
+            <div><button id="addLasagne">Add</button></div>
+            <button id="deleteButton1">Delete</button></id>
+            <img src="./images/lasagne.jpg" alt="">
           </div>
-          <div class="container">
-            <div class="box">
-              <img src="./images/lasagne.jpg" alt="" />
-              <button class="cart-btn">Add to cart</button>
-            </div>
-            <div class="box">
-              <img src="./images/french.fries.burger.jpg" alt="" />
-              <button class="cart-btn">Add to cart</button>
-            </div>
-            <div class="box">
-              <img src="./images/pizza.jpg" alt="" />
-              <button class="cart-btn">Add to cart</button>
-            </div>
+
+          <div id="burger" class="product">
+            Burger/french fries Price: 18$
+            <div><button id="addBurger">Add</button></div>
+            <button id="deleteButton2">Delete</button>
+            <img src="images/french.fries.burger.jpg" alt="">
           </div>
+
+          <div id="pizza" class="product">
+            Pizza Price: 21$
+            <div><button id="addPizza">Add</button></div>
+            <button id="deleteButton3">Delete</button>
+            <img src="images/pizza.jpg" alt="">
+          </div>
+    </div>
+      
         </main>
 
         <footer>
@@ -57,6 +65,6 @@
           </div>
         </footer>
       </div>
-    </div>
+    
   </body>
 </html>

@@ -11,6 +11,31 @@ document.addEventListener("DOMContentLoaded", function () {
     listpage: document.querySelector("#list-page"),
   };
   //!! current pages !!//
+  //ADD ITEM
+  const addItemInput = document.querySelector(".addItemInput");
+  const addItemButton = document.querySelector("button.addItemButton");
+
+  //Remove Item
+  const removeItemButton = document.querySelector("button.removeItemButton");
+
+  //!! List items !!//
+  const listItems = document.getElementsByTagName("li");
+  addItemButton.addEventListener("click", () => {
+    let list = document.querySelector("ul");
+    let li = document.createElement("li");
+    li.textContent = addItemInput.value;
+    let appendedItem = list.appendChild(li);
+    for (let i = 0; i < appendedItem.length; i++) {
+      appendedItem[i].style.color = lastPickedColor;
+    }
+    addItemInput.value = "";
+  });
+  //!! Remove item !!//
+  removeItemButton.addEventListener("click", () => {
+    let list = document.querySelector("ul");
+    let li = document.querySelector("li:last-child");
+    list.removeChild(li);
+  });
 
   //!! Page switchers !!//
   //const recepice = document.querySelector("#recepiece-page").addEventListener("click", function () {});;

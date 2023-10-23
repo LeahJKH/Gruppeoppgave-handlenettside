@@ -9,6 +9,8 @@
 
 -Making the navbar in html
 -Making the header in html
+-added styling to buttons
+-added price
 ----------Andre---------------
 -Laget hedder ferdig
 -mangler bare Animasjon for hamburger Korte er ferdig

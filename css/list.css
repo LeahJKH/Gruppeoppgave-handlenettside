@@ -11,7 +11,9 @@ body {
   overflow: hidden;
   background-color: rgb(50, 49, 49);
 }
-/*main page styles and general*/
+/* ---------------------------------
+!!! main page styles and general !!!
+------------------------------------ */
 
 .mobileBod {
   width: 320px;
@@ -22,6 +24,24 @@ body {
 .mobile {
   border: 10px solid grey;
 }
+#small-icon {
+  width: 55px;
+  height: 55px;
+}
+#home-page {
+  cursor: pointer;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+/* ---------
+!!! Heder !!!
+----------- */
 header {
   background-color: #f4b393;
   height: 80px;
@@ -34,17 +54,9 @@ header {
   align-items: center;
   padding: 10px;
 }
-footer {
-  background-color: #f4b393;
-  height: 90px;
-  width: 320px;
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
+/* ---------
+!!! Main !!!
+----------- */
 main {
   padding: 10px;
 }
@@ -58,18 +70,9 @@ main::-webkit-scrollbar {
   background-color: #ceec97;
   border: 3px solid #9fb96e;
 }
-
-/*header og footer objects*/
-#small-icon {
-  width: 55px;
-  height: 55px;
-}
-#home-page {
-  cursor: pointer;
-}
-/*header og footer*/
-
-/*multiuse classes*/
+/* ---------
+!!! Button !!!
+----------- */
 .menu-btn {
   width: 55px;
   height: 55px;
@@ -84,12 +87,18 @@ main::-webkit-scrollbar {
   width: 35px;
   height: 35px;
 }
-.column {
-  display: flex;
-  flex-direction: column;
-}
-.row {
+
+/* ---------
+!!! Footer !!!
+----------- */
+footer {
+  background-color: #f4b393;
+  height: 90px;
+  width: 320px;
+  position: absolute;
+  bottom: 0;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
-/*multiuse classes*/

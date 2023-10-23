@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let li = document.createElement("li");
     li.textContent = addItemInput.value;
     let appendedItem = list.appendChild(li);
-    li.style.color = lastPickedColor; // so it will add li with last picked color
     for (let i = 0; i < appendedItem.length; i++) {
       appendedItem[i].style.color = lastPickedColor;
     }

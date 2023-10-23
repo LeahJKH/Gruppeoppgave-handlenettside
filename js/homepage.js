@@ -42,7 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const likeCount = document.getElementById("likeCount");
   let count = 0;
 
-  // Retrieve the initial count from localStorage, or set it to 0 if it doesn't exist
   const savedCount = localStorage.getItem("likeCount");
   if (savedCount) {
     count = parseInt(savedCount);

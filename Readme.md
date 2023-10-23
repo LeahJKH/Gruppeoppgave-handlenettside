@@ -17,3 +17,5 @@
 -Laget hedder ferdig
 -bare generere random fra js
 -fotter ferdig
+-added like button.
+-added local storeg til like button.

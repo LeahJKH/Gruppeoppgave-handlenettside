@@ -14,9 +14,16 @@
 -Making the navbar in html
 -Making the header in html
 ----------Andre---------------
--Laget hedder ferdig
+Home page{
+-Laget hedder ferdig i html og css
+-implementert hedder forbedringer
 -bare generere random fra js
--fotter ferdig
+-fotter inplementert
 -added like button.
 -added local storeg til like button.
+}
+List{
 -fixet css
+-lagd list
+-added css i list
+}

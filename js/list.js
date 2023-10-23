@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //!! List items !!//
   const listItems = document.getElementsByTagName("li");
+
   addItemButton.addEventListener("click", () => {
     let list = document.querySelector("ul");
     let li = document.createElement("li");

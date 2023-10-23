@@ -21,6 +21,7 @@ Home page{
 -fotter inplementert
 -added like button.
 -added local storeg til like button.
+-margin and pading fix
 }
 List{
 -fixet css

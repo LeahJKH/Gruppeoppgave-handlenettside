@@ -64,12 +64,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Create user cards
   function createUserCard() {
-    const randomCardIndex = Math.floor(Math.random() * users.length);
-
     for (let i = 0; i < 4; i++) {
       let differentLikes = `<button id="likeButton${i}" class="likeButtonstyle">Like</button>
       <span id="likeCount${i}">0</span>`;
-
+      const randomCardIndex = Math.floor(Math.random() * users.length);
       // Create a new user card element
       const userCardElement = document.createElement("div");
       userCardElement.innerHTML = `<div style="border: 2px solid #9fb96e">

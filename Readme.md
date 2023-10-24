@@ -27,4 +27,5 @@ List{
 -fixet css
 -lagd list
 -added css i list
+-prøvd å lage local storeg.
 }

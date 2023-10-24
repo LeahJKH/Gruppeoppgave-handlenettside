@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     listpage: document.querySelector("#list-page"),
   };
   //!! current pages !!//
+
   //ADD ITEM
   const addItemInput = document.querySelector(".addItemInput");
   const addItemButton = document.querySelector("button.addItemButton");

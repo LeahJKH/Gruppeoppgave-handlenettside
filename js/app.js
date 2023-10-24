@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     count++;
     loadingBar.value = count;
     if (count === 100) {
-      location.href = "./homepage.html";
+      location.href = "./userpage.html";
     }
   } //makes it fill the loadingbar then checks if its full before sending too next
 });

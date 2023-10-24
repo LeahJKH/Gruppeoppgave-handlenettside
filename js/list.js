@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   //!! OBJECT !!//
   const list = document.querySelector("#list");
+  const warnmsg = document.querySelector("#warn");
   //!! OBJECT !!//
 
   //!! current pages !!//
@@ -9,8 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
     shoppingCartPage: document.querySelector("#shopping-page"),
     userPage: document.querySelector("#user-page"),
     listpage: document.querySelector("#list-page"),
+    homepagebtn: document.querySelector("#homepagebtn"),
   };
   //!! current pages !!//
+
   //ADD ITEM
   const addItemInput = document.querySelector(".addItemInput");
   const addItemButton = document.querySelector("button.addItemButton");
@@ -20,15 +23,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //!! List items !!//
   const listItems = document.getElementsByTagName("li");
+
   addItemButton.addEventListener("click", () => {
-    let list = document.querySelector("ul");
-    let li = document.createElement("li");
-    li.textContent = addItemInput.value;
-    let appendedItem = list.appendChild(li);
-    for (let i = 0; i < appendedItem.length; i++) {
-      appendedItem[i].style.color = lastPickedColor;
+    if (addItemInput.value != "") {
+      let list = document.querySelector("ul");
+      let li = document.createElement("li");
+      li.textContent = addItemInput.value;
+      let appendedItem = list.appendChild(li);
+      addItemInput.value = "";
+      warnmsg.textContent = "";
+    } else {
+      warnmsg.textContent = "please fill out something";
     }
-    addItemInput.value = "";
   });
   //!! Remove item !!//
   removeItemButton.addEventListener("click", () => {
@@ -36,14 +42,16 @@ document.addEventListener("DOMContentLoaded", function () {
     let li = document.querySelector("li:last-child");
     list.removeChild(li);
   });
-
+  //
   //!! Page switchers !!//
-  //const recepice = document.querySelector("#recepiece-page").addEventListener("click", function () {});;
+  pages.homepagebtn.addEventListener("click", function () {
+    location.href = "./homePage.html";
+  });
   pages.listpage.addEventListener("click", function () {
     location.href = "./list.html";
   }); // makes the button clickable and changes page
   pages.homePage.addEventListener("click", function () {
-    location.href = "./homepage.html";
+    location.href = "./homePage.html";
   }); // makes the button clickable and changes page
   pages.shoppingCartPage.addEventListener("click", function () {
     location.href = "./handlekurv.html";
@@ -52,8 +60,4 @@ document.addEventListener("DOMContentLoaded", function () {
     location.href = "./userpage.html";
   }); // makes the button clickable and changes page
   //!! Page switchers !!//
-
-  //!!main logic!!//
-
-  //!!main logic!!//
 }); //makes the page load before script

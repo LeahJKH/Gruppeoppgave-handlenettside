@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     shoppingCartPage: document.querySelector("#shopping-page"),
     userPage: document.querySelector("#user-page"),
     listpage: document.querySelector("#list-page"),
+    homepagebtn: document.querySelector("#homepagebtn"),
   };
 
   // Set the username based on sessionStorage
@@ -96,17 +97,21 @@ document.addEventListener("DOMContentLoaded", function () {
   // Create multiple user cards
   createUserCard();
 
-  // Add click event listeners for page navigation
+  //!! Page switchers !!//
+  pages.homepagebtn.addEventListener("click", function () {
+    location.href = "./homePage.html";
+  });
   pages.listpage.addEventListener("click", function () {
     location.href = "./list.html";
-  });
+  }); // makes the button clickable and changes page
   pages.homePage.addEventListener("click", function () {
-    location.href = "./homepage.html";
-  });
+    location.href = "./homePage.html";
+  }); // makes the button clickable and changes page
   pages.shoppingCartPage.addEventListener("click", function () {
     location.href = "./handlekurv.html";
-  });
+  }); // makes the button clickable and changes page
   pages.userPage.addEventListener("click", function () {
     location.href = "./userpage.html";
-  });
+  }); // makes the button clickable and changes page
+  //!! Page switchers !!//
 });

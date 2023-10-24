@@ -22,16 +22,19 @@ document.addEventListener("DOMContentLoaded", function () {
     shoppingCartPage: document.querySelector("#shopping-page"),
     userPage: document.querySelector("#user-page"),
     listpage: document.querySelector("#list-page"),
+    homepagebtn: document.querySelector("#homepagebtn"),
   };
   //!! current pages !!//
 
   //!! Page switchers !!//
-  //const recepice = document.querySelector("#recepiece-page").addEventListener("click", function () {});;
+  pages.homepagebtn.addEventListener("click", function () {
+    location.href = "./homePage.html";
+  });
   pages.listpage.addEventListener("click", function () {
     location.href = "./list.html";
   }); // makes the button clickable and changes page
   pages.homePage.addEventListener("click", function () {
-    location.href = "./homepage.html";
+    location.href = "./homePage.html";
   }); // makes the button clickable and changes page
   pages.shoppingCartPage.addEventListener("click", function () {
     location.href = "./handlekurv.html";

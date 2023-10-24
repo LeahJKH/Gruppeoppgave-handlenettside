@@ -126,3 +126,6 @@ footer {
   justify-content: space-around;
   align-items: center;
 }
+#warn {
+  color: rgb(169, 37, 37);
+}

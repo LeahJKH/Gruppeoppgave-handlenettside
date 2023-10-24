@@ -28,8 +28,19 @@
 
 --------------------Andre----------------------------------------------------------------------------------------------------
 
--Laget hedder ferdig
+Home page{ 
+-Laget hedder ferdig i html og css 
+-implementert hedder forbedringer 
+-bare generere random fra js 
+-fotter inplementert 
+-added like button. 
+-added local storeg til like button. 
+-margin and pading fix 
+} 
 
--mangler bare Animasjon for hamburger Korte er ferdig
-
--bare generere random fra js
+List{ 
+-fixet css 
+-lagd list 
+-added css i list 
+-prøvd å lage local storeg. 
+}
